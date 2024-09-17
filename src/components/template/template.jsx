@@ -14,8 +14,7 @@ const MainTemplate = ({ children }) => {
   return (
     <Layout style={{ width: '100vw', height: '100vh' }}>
       <Header>
-        <div className="logo" />
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
+        <Menu theme="dark" mode="horizontal">
           <Menu.Item key="1" icon={<HomeOutlined />} >
             <Link to="/">Home</Link>
           </Menu.Item>
@@ -32,9 +31,6 @@ const MainTemplate = ({ children }) => {
           {children}
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>
-        SinbaExpress ©{new Date().getFullYear()} Criado por SinbaGroup
-      </Footer>
     </Layout>
   );
 };
